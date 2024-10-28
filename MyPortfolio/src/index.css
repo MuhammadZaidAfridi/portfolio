@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bannerIcon {
+        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-45 hover:translate-y-1 hover:text-pink-600 cursor-pointer duration-300;
+    }
+
+    .ResumeButton {
+        @apply lg:w-40 lg:h-20 bg-black bg-opacity-25 text-xl text-gray-300 lg:flex justify-center items-center cursor-pointer hover:bg-opacity-40 duration-500 border-[1px] rounded-lg hover:scale-105 font-semibold
+    }
+    /* .ResumeBox {
+        @apply w-96 h-72 bg-black bg-opacity-25 text-gray-300 p-9 cursor-pointer hover:bg-opacity-40 duration-500  rounded-lg hover:scale-105 
+    } */
+    .ResumeBox {
+        @apply md:w-96 md:h-72 bg-gradient-to-r from-bodyColor to-[#292c31] shadow-shadowOne   bg-opacity-25 text-gray-300 p-9 cursor-pointer hover:bg-opacity-40 duration-500  rounded-lg hover:scale-105 
+    }
+
+    .bgOpacity {
+        @apply bg-black bg-opacity-40
+    }
+}
+
+.active {
+    color: white;
+}
